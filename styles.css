@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    opacity: 0.95;
+}
+
+section {
+    padding: 50px 40px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #2d3748;
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    gap: 30px;
+}
+
+.service-card {
+    background: #f7fafc;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #e2e8f0;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.service-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.8em;
+    color: #2d3748;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    color: #718096;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.subjects {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.subject {
+    background: #667eea;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #2d3748;
+}
+
+.price .amount {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #667eea;
+}
+
+.price .duration {
+    color: #718096;
+}
+
+.about {
+    background: #f7fafc;
+}
+
+.about ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about li {
+    padding: 15px 0;
+    font-size: 1.2em;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.about li:last-child {
+    border-bottom: none;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #718096;
+    margin-bottom: 30px;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.btn-secondary:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+footer {
+    background: #2d3748;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
